@@ -15,6 +15,9 @@
       <input type="text" placeholder="img url" ng-model="picUrlIn">
       <button type="button" ng-click="postPet()">Submit</button>
 
-    </div>
+      <h3>All the Pets!</h3>
+      <div ng-repeat = "petdirectory in directoryResults">
+        <p>{{petdirectory.name}} {{petdirectory.type}} {{petdirectory.age}} {{petdirectory.img}}</p>
+      </div>
   </body>
 </html>
