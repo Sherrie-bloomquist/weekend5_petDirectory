@@ -6,7 +6,15 @@
     <script type="text/javascript" src = "client.js"></script>
     <title>Pet Directory</title>
   </head>
-  <body>
+  <body ng-app = "myApp">
     <h1>Pet Directory</h1>
+    <div ng-controller="DirectoryController">
+      <input type="text" placeholder="pet name" ng-model="petNameIn">
+      <input type="text" placeholder="type of animal" ng-model="typeOfAnimalIn">
+      <input type="text" placeholder="age" ng-model="petAgeIn">
+      <input type="text" placeholder="img url" ng-model="picUrlIn">
+      <button type="button" ng-click="postPet()">Submit</button>
+
+    </div>
   </body>
 </html>
