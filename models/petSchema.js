@@ -6,7 +6,7 @@ var petSchema = new Schema ({
   name: String,
   type: String,
   age: Number,
-  img: String
+  imgUrl: String
 });
 
 var Directory = mongoose.model ('pets', petSchema);

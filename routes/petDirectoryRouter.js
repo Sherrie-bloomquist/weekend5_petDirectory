@@ -27,7 +27,7 @@ router.post('/', function (req, res){
     name: sentData.name,
     type: sentData.type,
     age: sentData.age,
-    img: sentData.img,
+    imgUrl: sentData.imgUrl,
   }); //end newPet
 
   newPet.save(function(err){

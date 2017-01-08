@@ -7,7 +7,7 @@ requires angular, Node, Express, Mongo, mongoose
 [x] source in javascript and angular into html   
 [x] set up Schema, define GET and POST routes  
 [x] spin up server on port 3000  
-[] create Mongo database   
+[x] create Mongo database   
 
 
 
@@ -15,8 +15,9 @@ FUNCTIONALITY
 _________________________________  
 
 [x] create text input fields that will take in new pet data (name, animal type, age, pic Url)  
-[] create button and give functionality to submit new information to the database  
-[] return info from database to the client and display on the DOM  
+[x] create button and give functionality to submit new information to the database  
+[x] return info from database to the client and display on the DOM  
+[] reset input fields when submit button is clicked  
 [] really dive into bootstrap styling  
 
 

@@ -22,7 +22,7 @@ $scope.postPet = function(){
     name: $scope.petNameIn,
     type: $scope.typeOfAnimalIn,
     age: $scope.petAgeIn,
-    img: $scope.picUrlIn
+    imgUrl: $scope.picUrlIn
   };//end var newPet object
   console.log('newPet', newPet);
 

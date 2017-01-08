@@ -4,17 +4,39 @@
     <meta charset="utf-8">
     <script type="text/javascript" src = "vendors/angular.min.js"></script>
     <script type="text/javascript" src = "client.js"></script>
-    <title>Pet Directory</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title>Tau Pet Directory</title>
   </head>
   <body ng-app = "myApp">
-    <h1>Pet Directory</h1>
+    <nav class="navbar navbar-default">
+    <div id='bg_1' class="collapse navbar-collapse" id="myNavbar">
+     <ul class="nav navbar-nav navbar-right">
+       <li><a href="#">home</a></li>
+       <li><a href="#">add new pet</a></li>
+       <li><a href="#">view all pets</a></li>
+     </ul>
+    </div>
+
+    <div id='bg_2' class="container-fluid bg-1 text-center">
+    <h3 class="margin">Tau Pet Directory</h3>
+    <img src="http://devjana.net/support/tau/george.jpg" class="img-responsive img-circle margin" style="display:inline" alt="pic of George the cat" width="350" height="350">
+    <h3>prepare for cuteness overload</h3>
+  </div>
+
     <div ng-controller="DirectoryController">
       <input type="text" placeholder="pet name" ng-model="petNameIn">
       <input type="text" placeholder="type of animal" ng-model="typeOfAnimalIn">
       <input type="text" placeholder="age" ng-model="petAgeIn">
       <input type="text" placeholder="img url" ng-model="picUrlIn">
-      <button type="button" ng-click="postPet()">Submit</button>
+      <button type="button" ng-click="postPet()" class="btn btn-success">Submit</button>
 
+      <h3>All the Pets!</h3>
+      <div ng-repeat = "petdirectory in directoryResults" class="col-xs-6 col-sm-3">
+        <img height='200' width='auto' ng-src="{{petdirectory.imgUrl}}">
+        <p>{{petdirectory.name}}</p>
+        <p>{{petdirectory.type}}</p>
+        <p>{{petdirectory.age}}</p>
     </div>
   </body>
 </html>
