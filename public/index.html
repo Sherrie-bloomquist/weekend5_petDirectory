@@ -13,6 +13,7 @@
     <title>Tau Pet Directory</title>
   </head>
   <body ng-app = "myApp">
+<<<<<<< HEAD
     <nav class="navbar">
     <div id='bg_1' class="navbar-header" id="myNavbar">
      <ul class="nav nav-tabs nav-justified">
@@ -27,5 +28,19 @@
   <main ng-view></main>
 
 
+=======
+    <h1>Pet Directory</h1>
+    <div ng-controller="DirectoryController">
+      <input type="text" placeholder="pet name" ng-model="petNameIn">
+      <input type="text" placeholder="type of animal" ng-model="typeOfAnimalIn">
+      <input type="text" placeholder="age" ng-model="petAgeIn">
+      <input type="text" placeholder="img url" ng-model="picUrlIn">
+      <button type="button" ng-click="postPet()">Submit</button>
+
+      <h3>All the Pets!</h3>
+      <div ng-repeat = "petdirectory in directoryResults">
+        <p>{{petdirectory.name}} {{petdirectory.type}} {{petdirectory.age}} {{petdirectory.img}}</p>
+      </div>
+>>>>>>> 78a0f38f8f50e4691a337e4bd6368f0a4d56a930
   </body>
 </html>

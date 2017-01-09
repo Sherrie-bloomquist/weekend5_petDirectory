@@ -18,6 +18,7 @@ _________________________________
 [x] create button and give functionality to submit new information to the database  
 [x] return info from database to the client and display on the DOM  
 [] reset input fields when submit button is clicked  
+[] return info from database to the client and display on the DOM  
 [] really dive into bootstrap styling  
 
 
