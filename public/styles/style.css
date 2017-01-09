@@ -1,7 +1,38 @@
 #bg_1{
-  background-color: black
+  background-color: black;
+  position: fixed;
+
 }
 
 #bg_2{
-  background-color: #1abc9c
+  background-color: #1abc9c;
+  padding-bottom: 30px;
+  padding-top: 60px;
+}
+
+#bg_3{
+  background-color: lightgrey;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+#mainDescription{
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  text-align: center;
+  font-size: 20px;
+
+}
+
+.heading1{
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 50px;
+}
+
+.heading2{
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 30px;
+}
+
+ul {
+  text-align:center;
 }

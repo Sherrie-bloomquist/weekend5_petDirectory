@@ -9,34 +9,28 @@
     <title>Tau Pet Directory</title>
   </head>
   <body ng-app = "myApp">
-    <nav class="navbar navbar-default">
-    <div id='bg_1' class="collapse navbar-collapse" id="myNavbar">
-     <ul class="nav navbar-nav navbar-right">
-       <li><a href="#">home</a></li>
-       <li><a href="#">add new pet</a></li>
-       <li><a href="#">view all pets</a></li>
+    <nav class="navbar navbar-static-top">
+    <div id='bg_1' class="navbar-header" id="myNavbar">
+     <ul class="nav nav-tabs nav-justified">
+       <li><a href="#!/home">home</a></li>
+       <li><a href="#!/addPet">add new pet</a></li>
+       <li><a href="#!/viewPet">view all pets</a></li>
      </ul>
     </div>
 
-    <div id='bg_2' class="container-fluid bg-1 text-center">
-    <h3 class="margin">Tau Pet Directory</h3>
+  <div id='bg_2' class="container-fluid bg-1 text-center">
+    <h2 class="heading1">Tau Pet Directory</h2>
     <img src="http://devjana.net/support/tau/george.jpg" class="img-responsive img-circle margin" style="display:inline" alt="pic of George the cat" width="350" height="350">
-    <h3>prepare for cuteness overload</h3>
+    <h3 class="heading2">prepare for cuteness overload</h3>
   </div>
 
-    <div ng-controller="DirectoryController">
-      <input type="text" placeholder="pet name" ng-model="petNameIn">
-      <input type="text" placeholder="type of animal" ng-model="typeOfAnimalIn">
-      <input type="text" placeholder="age" ng-model="petAgeIn">
-      <input type="text" placeholder="img url" ng-model="picUrlIn">
-      <button type="button" ng-click="postPet()" class="btn btn-success">Submit</button>
+  <div id="bg_3">
+    <p id="mainDescription">
+      This is a gallery of Tau pets. <br>Navigate to 'view all pets' to have a look. <br>Don't see your pet? Navigate to 'add new pet' to introduce us to your furry friend. <br>Enjoy!
+    </p>
+  </div>
 
-      <h3>All the Pets!</h3>
-      <div ng-repeat = "petdirectory in directoryResults" class="col-xs-6 col-sm-3">
-        <img height='200' width='auto' ng-src="{{petdirectory.imgUrl}}">
-        <p>{{petdirectory.name}}</p>
-        <p>{{petdirectory.type}}</p>
-        <p>{{petdirectory.age}}</p>
-    </div>
+
+
   </body>
 </html>

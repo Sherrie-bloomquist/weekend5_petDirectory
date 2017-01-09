@@ -1,0 +1,8 @@
+
+    <h3>All the Pets!</h3>
+    <div ng-repeat = "petdirectory in directoryResults" class="col-xs-6 col-sm-3">
+      <img height='200' width='auto' ng-src="{{petdirectory.imgUrl}}">
+      <p>{{petdirectory.name}}</p>
+      <p>{{petdirectory.type}}</p>
+      <p>{{petdirectory.age}}</p>
+  </div>

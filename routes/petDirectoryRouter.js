@@ -41,4 +41,10 @@ router.post('/', function (req, res){
   }); //end newPet.save
 }); //end router.post
 
+//---------delete pet from database----------//
+// router.delete('/deletePet', function(req, res){
+//
+//
+// }); //end router.delete
+
 module.exports = router;
