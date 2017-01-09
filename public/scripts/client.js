@@ -43,6 +43,7 @@ myApp.config(['$routeProvider', function($routeProvider){
         url: "/petdirectory",
         data: newPet
       }).then(); //end http post call
+      alert($scope.petNameIn + ' has been added!');
     }; //end postPet
   }]); //end addPetController
 

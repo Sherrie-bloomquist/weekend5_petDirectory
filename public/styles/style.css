@@ -1,7 +1,9 @@
+#mainView{
+  background-color: #1abc9c;
+}
+
 #bg_1{
   background-color: black;
-  /*position: fixed;*/
-
 }
 
 #bg_2{
@@ -33,25 +35,48 @@
   font-size: 30px;
 }
 
-#viewPetBody{
-  background-color: #1abc9c;
-}
-
 #viewPetContainer p {
   font-family: "Comic Sans MS", cursive, sans-serif;
   text-align: center;
   font-size: 16px;
-
 }
 
+.tile{
+  margin-top: 30px;
+}
+
+
 #viewPetHeading{
-  text-align: left;
-  background-color: lightgrey;
+  text-align: center;
+  background-color: #1abc9c;
   font-family: "Comic Sans MS", cursive, sans-serif;
-  font-size: 40px;
+  font-size: 60px;
   padding: 40px 0 40px 0;
+  margin-top: 40px;
 }
 
 #imgView{
   align-items: center;
+}
+
+#addPetCaption{
+  text-align: center;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 45px;
+  background-color: #1abc9c;
+  padding: 40px 0 40px 0;
+}
+
+#addPetInput{
+  background-color: #1abc9c;
+  padding: 40px 0 40px 0;
+  margin-top: 40px;
+}
+
+input{
+  font-family: "Comic Sans MS", cursive, sans-serif !important;
+  line-height: 32px !important;
+  border: none;
+  border-radius: 5px !important;
+
 }

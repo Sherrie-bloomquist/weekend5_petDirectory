@@ -1,12 +1,11 @@
 
-    <h3 id="viewPetHeading">Introducing......!!!</h3>
+    <h3 id="viewPetHeading">~    Tau Pets    ~</h3>
 
-    <div id="viewPetBody" ng-controller="viewPetController"ng-repeat = "petdirectory in directoryResults" class="col-xs-6 col-sm-3">
-      <img height='200' width='auto' ng-src="{{petdirectory.imgUrl}}"><br>
-      <button type="button"  class="btn btn-danger">Delete</button>
+    <div ng-controller="viewPetController"ng-repeat = "petdirectory in directoryResults" class="col-xs-6 col-sm-3 tile">
+      <img height='300' width='100%' ng-src="{{petdirectory.imgUrl}}"><br>
 
     <div id="viewPetContainer">
-      <p>Hi! I'm, {{petdirectory.name}},  I am {{petdirectory.age}} years old</p>
-      <p> and a {{petdirectory.type}}</p>
+      <p>Hi! I'm {{petdirectory.name}}.  I'm {{petdirectory.age}} and a {{petdirectory.type}}.</p>
+      <center><button type="button"  class="btn btn-danger">Delete</button></center>
     </div>
   </div>
