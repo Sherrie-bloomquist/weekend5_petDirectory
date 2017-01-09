@@ -1,6 +1,6 @@
 #bg_1{
   background-color: black;
-  position: fixed;
+  /*position: fixed;*/
 
 }
 
@@ -33,6 +33,25 @@
   font-size: 30px;
 }
 
-ul {
-  text-align:center;
+#viewPetBody{
+  background-color: #1abc9c;
+}
+
+#viewPetContainer p {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  text-align: center;
+  font-size: 16px;
+
+}
+
+#viewPetHeading{
+  text-align: left;
+  background-color: lightgrey;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 40px;
+  padding: 40px 0 40px 0;
+}
+
+#imgView{
+  align-items: center;
 }

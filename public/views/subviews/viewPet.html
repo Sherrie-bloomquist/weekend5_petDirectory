@@ -1,8 +1,12 @@
 
-    <h3>All the Pets!</h3>
-    <div ng-repeat = "petdirectory in directoryResults" class="col-xs-6 col-sm-3">
-      <img height='200' width='auto' ng-src="{{petdirectory.imgUrl}}">
-      <p>{{petdirectory.name}}</p>
-      <p>{{petdirectory.type}}</p>
-      <p>{{petdirectory.age}}</p>
+    <h3 id="viewPetHeading">Introducing......!!!</h3>
+
+    <div id="viewPetBody" ng-controller="viewPetController"ng-repeat = "petdirectory in directoryResults" class="col-xs-6 col-sm-3">
+      <img height='200' width='auto' ng-src="{{petdirectory.imgUrl}}"><br>
+      <button type="button"  class="btn btn-danger">Delete</button>
+
+    <div id="viewPetContainer">
+      <p>Hi! I'm, {{petdirectory.name}},  I am {{petdirectory.age}} years old</p>
+      <p> and a {{petdirectory.type}}</p>
+    </div>
   </div>

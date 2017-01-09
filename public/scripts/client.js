@@ -5,7 +5,7 @@ var myApp = angular.module ('myApp', ['ngRoute']);
 myApp.config(['$routeProvider', function($routeProvider){
   $routeProvider
     .when("/home", {
-      templateUrl: 'index.html',
+      templateUrl: 'views/subviews/homeView.html',
       controller: "homeController"
     })
     .when("/addPet",{
@@ -57,11 +57,10 @@ myApp.controller("viewPetController", ["$scope", "$http", function($scope, $http
       $scope.directoryResults = response.data;
     }); //end http get call
   }; //end getPet
-getPet();
+  $scope.getPet();
 }]);
 
 
 myApp.controller('homeController', ["$scope", function($scope){
   console.log('in homeController');
 }]);
-}]); //end controller

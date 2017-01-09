@@ -24,5 +24,5 @@ _________________________________
 STRETCH GOALS
 ______________________________________  
 [] Add a button in the Pets List to delete a pet from the database   
-[] Use Angular Routes to have a view for each function: home view, add new pet view, all pets view  
+[x] Use Angular Routes to have a view for each function: home view, add new pet view, all pets view  
 []  In the all pets view, include a button to turn on Alphabetical Sorting of the pets that can be toggled on and off  
